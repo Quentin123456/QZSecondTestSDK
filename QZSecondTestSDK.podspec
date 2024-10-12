@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'QZSecondTestSDK'
-  s.version          = '0.1.0'
-  s.summary          = '测试pod库制作.'
+  s.version          = '0.2.0'
+  s.summary          = '更新一版.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -23,13 +23,13 @@ Pod::Spec.new do |s|
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'QuentinZang' => 'quentinzang@outlook.com' }
-  s.source           = { :git => 'git@github.com:Quentin123456/QZSecondTestSDK.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/Quentin123456/QZSecondTestSDK.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '12.0'
   s.requires_arc = true
   s.library   = "c++.1"
-  s.vendored_frameworks ='framework/TencentOpenAPI.framework'
+  s.vendored_frameworks ='framework/TencentOpenAPI.framework','framework/BrickSDK.xcframework'
   s.resource = 'framework/*.{bundle}'
 
   #s.source_files = 'QZSecondTestSDK/Classes/**/*'
